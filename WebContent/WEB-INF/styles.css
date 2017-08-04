@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.formdiv{
+	padding: 10px;
+	display: inline-block;
+	vertical-align: top;
+	border-style: solid;
+	background-color: pink;
+	
+}
