@@ -1,9 +1,9 @@
 package models;
 
 public class animals {
-	private String name;
-	private int weight;
-	private String breed;
+	public String name;
+	public int weight;
+	public String breed;
 	
 	
 	public animals(String name, String breed, int weight) {

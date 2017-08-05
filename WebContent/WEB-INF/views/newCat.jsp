@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<h1>Your ${catBreed} ,</h1>
-<p>${catName} looked at you with affection </p>
+<h1>Your ${MyCat.breed},</h1>
+<p>${MyCat.showAffections()}</p>
 </body>
 </html>

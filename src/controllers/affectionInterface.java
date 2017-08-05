@@ -1,6 +1,13 @@
 package controllers;
 
+
+import models.cats;
+import models.dogs;
+
 public interface affectionInterface {
-	void showAffections();
+	
+	String showAffections();
+	
+	
 	
 }

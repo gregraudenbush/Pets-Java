@@ -1,7 +1,6 @@
 package com.gregory.web;
 import models.*;
 import java.io.IOException;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -24,6 +23,7 @@ public class AnimalServlet extends HttpServlet {
     int catWeight;
     String catBreed;
     String type;
+    dogs MyDog;
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -40,13 +40,13 @@ public class AnimalServlet extends HttpServlet {
 		request.setAttribute("dogName", dogName);
 		request.setAttribute("dogBreed", dogBreed);
 		request.setAttribute("dogWeight", dogWeight);
-//		request.setAttribute("catName", catName);
-//		request.setAttribute("catBreed", catWeight);
-//		request.setAttribute("catWeight", catBreed);
+//		
 		request.setAttribute("type", type);
+		request.setAttribute("MyDog", MyDog);
+		
 //		
 		if (this.dogName != null) {
-			new dogs(dogName, dogBreed, dogWeight);
+			this.MyDog = new dogs(dogName, dogBreed, dogWeight);
 			request.getRequestDispatcher("/WEB-INF/views/newDog.jsp").forward(request, response);
 		    
 		}

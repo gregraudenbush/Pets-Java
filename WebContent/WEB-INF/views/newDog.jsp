@@ -8,18 +8,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>You Created a ${dogBreed}</h1>
+<h1>You Created a ${Mydog.breed}</h1>
 
-<%-- <%if(dogWeight < 30){ %> --%>
 
-	<p>${dogName} Jumped into your lap and Cuddled you </p>
-	
-<%-- <%}else{ %>
 
-	<p>${dogName} curled up next to you </p>
+	<p>${MyDog.showAffection()} </p>
 	
-	<%}%> --%>
-	
-	
+
+
 </body>
 </html>
